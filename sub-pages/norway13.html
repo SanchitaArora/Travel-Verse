@@ -1,0 +1,291 @@
+﻿
+
+
+
+
+<!DOCTYPE html>
+<html>
+<style>
+.intro{
+letter-spacing:2px;
+line-height:25px;
+font-family:"Lucida Bright";
+opacity:5;
+text-align:center;
+color:white;
+background-color:rgba(0, 0, 0, 0.4);
+}
+h2{
+font-family:"Mongolian Baiti";
+font-size:40px;
+font-weight:bold;
+color:white;
+margin-left:100px;
+}
+.one{
+font-family:"times new roman";
+font-size:22px;
+text-align:justify;
+width:1100px;
+padding:5px;
+margin-left:100px;
+background-color:rgba(183, 0, 158, 0.3);
+}
+.slider{
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+margin-left:355px;
+}
+
+
+.slides{
+  width: 500%;
+  height: 300px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 600px;
+  height: 300px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 600px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+#radio5:checked ~ .first{
+  margin-left: 0;
+}
+#radio6:checked ~ .first{
+  margin-left: -20%;
+}
+#radio7:checked ~ .first{
+  margin-left: -40%;
+}
+#radio8:checked ~ .first{
+  margin-left: -60%;
+}
+
+
+.container{
+position:relative;
+text-align:center;
+color:white;
+font-size:80px;
+}
+.bottom-left{
+position:absolute;
+bottom:60px;
+left:50px;
+}
+ol li{
+font-family:"times new roman";
+font-size:25px;
+margin-left:80px;
+}
+.image{
+background:url("https://images.unsplash.com/photo-1517315003714-a071486bd9ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHB1cnBsZSUyMHNreXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60");
+background-size:100%;
+height:100%;
+position:fixed;
+left:0;
+right:0;
+z-index:-1;
+filter:blur(9px);
+-webkit-filter:blur(9px);
+}
+.navbar {
+  overflow: hidden;
+  background: black; 
+}
+.navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 1px;
+  text-decoration: none;
+margin-right:100px;
+font-size:22px;
+font-family:arial;
+background-size:cover;
+}
+.navbar2{
+float:left;
+padding:0px 0px;
+color:white;
+margin-left:10px;
+display: block;
+font-size:30px;
+font-family:arial;
+}      
+</style>
+
+
+<body>
+<div class="navbar">
+<ul>
+  <a href="/project/index.html" target="_blank">Home</a></li>
+
+  <a href="/project/contact.html" target="_blank">Contact</a></li>
+  
+  <a href="/project/tips/index.html" target="_blank">Tips</a></li>
+  
+  <a href="/project/blog.html" target="_blank">Blog</a></li>
+  
+  <a href="/project/gallery.html" target="_blank">Gallery</a></li>
+  
+  <a href="/project/landing page/backvideo.html" target="_blank">Explore</a></li>
+
+<div class="navbar2">
+<span class="brand-name">
+TRAVEL-⚚-VERSE
+</span>
+</div> 
+
+</ul></div>
+<div class="image"></div>
+
+<div class="container">
+<div>
+<img src="https://wallpapercave.com/wp/wp4195167.jpg" alt="" width="100%" height="600px"">
+</div>
+<div class="bottom-left"><b>OSLO</b></div>
+</div>
+<p class="intro">The vibrant capital On a day in Oslo, you can experience world-class food, music and museumsand many more</p>
+
+<p class="one">The capital of <a href="https://en.wikipedia.org/wiki/Oslo">Oslo</a> is one of Europe’s fastest-growing cities. International media is constantly writing about Oslo’s innovative architecture, museums, and neighbourhoods, as well as everything that moves on the food, fashion, art, and music scenes.
+
+Over the last few years, several new quarters have been established in the city centre, with exciting new activities and attractions. The high-rise buildings in Barcode and captivating landmarks like the Opera House and the Astrup Fearnley museum are changing the face of the city, and will soon be accompanied by a new Munch Museum and the new National Museum.</p>
+    <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="https://images.unsplash.com/photo-1468930830753-6699377de411?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8b3Nsb3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1594317568093-b27c52bb8d73?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8b3Nsb3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1566894069245-ab8428a4c9c8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8b3Nsb3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1613567993548-b3a0d9abb736?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8b3Nsb3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+    
+
+<p class="one">Oslo is a green city and was awarded the prestigious title European Green Capital in 2019. More than half of the municipality of Oslo is covered by forests and parks, and the fjord extends all the way to the city centre. The centre itself is becoming increasingly car-free and easy to explore on foot or by bike. An efficient public transport system makes the rest of the city easily accessible<br>
+The capital is full of green experiences, whether you want to swim, kayak or go island hopping, relax in lush parks or walk, cycle or ski in the forest. And when was the last time you were in a big city with urban farms and a separate motorway for bees? In the Botanical Garden you can visit the Nordic region’s first Climate House and see exhibitions on climate and climate change. </p>
+
+<!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio5">
+        <input type="radio" name="radio-btn" id="radio6">
+        <input type="radio" name="radio-btn" id="radio7">
+        <input type="radio" name="radio-btn" id="radio8">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="https://images.unsplash.com/photo-1551063517-c1fb38188dc5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG9zbG98ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1556476719-c2ec46ca76c3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8b3Nsb3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1617863066991-0bb839bfb3c0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG9zbG98ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1608914876485-4e48b8d4b6c4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG9zbG98ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio5" class="manual-btn"></label>
+        <label for="radio6" class="manual-btn"></label>
+        <label for="radio7" class="manual-btn"></label>
+        <label for="radio8" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+
+</body>
+</html>

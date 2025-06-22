@@ -1,0 +1,291 @@
+﻿
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<style>
+.intro{
+letter-spacing:2px;
+line-height:25px;
+font-family:"Lucida Bright";
+opacity:5;
+text-align:center;
+color:white;
+background-color:rgba(0, 0, 0, 0.4);
+}
+h2{
+font-family:"Mongolian Baiti";
+font-size:40px;
+font-weight:bold;
+color:white;
+margin-left:100px;
+}
+.one{
+font-family:"times new roman";
+font-size:22px;
+text-align:justify;
+width:1100px;
+padding:5px;
+margin-left:100px;
+background-color:rgba(228, 190, 255, 0.2);
+}
+.slider{
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+margin-left:355px;
+}
+
+
+.slides{
+  width: 500%;
+  height: 300px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 600px;
+  height: 300px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 600px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+#radio5:checked ~ .first{
+  margin-left: 0;
+}
+#radio6:checked ~ .first{
+  margin-left: -20%;
+}
+#radio7:checked ~ .first{
+  margin-left: -40%;
+}
+#radio8:checked ~ .first{
+  margin-left: -60%;
+}
+
+
+.container{
+position:relative;
+text-align:center;
+color:white;
+font-size:80px;
+}
+.bottom-left{
+position:absolute;
+bottom:60px;
+left:50px;
+}
+ol li{
+font-family:"times new roman";
+font-size:25px;
+margin-left:80px;
+}
+.image{
+background:url("https://images.unsplash.com/photo-1436124396594-54d90bf69c66?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+background-size:100%;
+height:100%;
+position:fixed;
+left:0;
+right:0;
+z-index:-1;
+filter:blur(9px);
+-webkit-filter:blur(9px);
+}
+.navbar {
+  overflow: hidden;
+  background: black; 
+}
+.navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 1px;
+  text-decoration: none;
+margin-right:100px;
+font-size:22px;
+font-family:arial;
+background-size:cover;
+}
+.navbar2{
+float:left;
+padding:0px 0px;
+color:white;
+margin-left:10px;
+display: block;
+font-size:30px;
+font-family:arial;
+}      
+</style>
+
+
+<body>
+<div class="navbar">
+<ul>
+  <a href="/project/index.html" target="_blank">Home</a></li>
+
+  <a href="/project/contact.html" target="_blank">Contact</a></li>
+  
+  <a href="/project/tips/index.html" target="_blank">Tips</a></li>
+  
+  <a href="/project/blog.html" target="_blank">Blog</a></li>
+  
+  <a href="/project/gallery.html" target="_blank">Gallery</a></li>
+  
+  <a href="/project/landing page/backvideo.html" target="_blank">Explore</a></li>
+
+<div class="navbar2">
+<span class="brand-name">
+TRAVEL-⚚-VERSE
+</span>
+</div> 
+
+</ul></div>
+<div class="image"></div>
+
+<div class="container">
+<div>
+<img src="https://uhdwallpapers.org/uploads/converted/18/03/10/fireworks-in-riga-1600x900_94758-mm-90.jpg" alt="" width="100%" height="600px"">
+</div>
+<div class="bottom-left"><b>EVENTS AND<br>FESTIVALS</b></div>
+</div>
+<p class="intro">Norway holds a strong history and tradition of music in different genres be it folk, jazz, black metal, or romantic. </p>
+
+<p class="one">Unparalleled musicians and recognised bands have become an inseparable part of the celebration culture of festivals in Norway. Not just music, but these festivals also bring to some of the best food and beverages that are closer to the Norway culture. So it’s always a great idea to plan your Norway trip dates around these festivals.</p>
+    <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8b3lhJTIwZmVzdGl2YWx8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2018/10/Gladmat.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2018/10/Nordlysfestivalen.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2018/10/Saint-Lucia%E2%80%99s-Day.jpg" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+    
+
+<p class="one">Some of the most talked about festivals in Oslo are The Øya festival, by:Larm and OverOslo. The Øya festival emphasises indie, hip-hop and electronic music. By:Larm in the city centre attracts a huge crowd in early March and OverOslo gives a fantastic view over the capital from the Grefsenkollen plateau. Slottsfjellfestivalen in Tønsberg, Pstereo in Trondheim and the Bukta festival in Tromsø are just some of other music festivals of a high calibre.<br>
+Based on a dramatic poem written by Henrik Ibsen on the historical life of Peer Gynt, who lived back in 17th century, the peer Gynt festival brings to life a celebration of the same. The festival brings together some brilliant professional actors and musicians to enthrall the people with one of the finest theatre productions of all time. Based on the view point of recreation of traditions, the festival is currently being organized by several volunteers gathering together for the cause.
+</p>
+
+<!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio5">
+        <input type="radio" name="radio-btn" id="radio6">
+        <input type="radio" name="radio-btn" id="radio7">
+        <input type="radio" name="radio-btn" id="radio8">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2018/10/The-Peer-Gynt-Festival.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2018/10/The-Polar-Jazz-Festival.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2018/10/Riddu-Riddu-Northern-Troms.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2018/10/International-Chamber-Music-Festival.jpg" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio5" class="manual-btn"></label>
+        <label for="radio6" class="manual-btn"></label>
+        <label for="radio7" class="manual-btn"></label>
+        <label for="radio8" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+
+</body>
+</html>

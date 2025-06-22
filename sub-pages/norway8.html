@@ -1,0 +1,304 @@
+﻿
+
+
+<!DOCTYPE html>
+<!-- saved from url=(0046)file:///C:/Users/abc/Music/NORWAY/norway8.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+.intro{
+letter-spacing:2px;
+line-height:25px;
+font-family:"Lucida Bright";
+opacity:5;
+text-align:center;
+background-color:rgba(0,0,0,0.3);
+color:white;
+}
+h2{
+font-family:"Mongolian Baiti";
+font-size:40px;
+font-weight:bold;
+color:white;
+margin-left:100px;
+}
+.one{
+font-family:"times new roman";
+font-size:22px;
+text-align:justify;
+width:1100px;
+padding:5px;
+margin-left:100px;
+background-color:rgba(105,0,105,0.5);
+opacity:7;
+}
+.slider{
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+margin-left:355px;
+}
+
+
+.slides{
+  width: 500%;
+  height: 300px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 600px;
+  height: 300px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 600px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+#radio5:checked ~ .first{
+  margin-left: 0;
+}
+#radio6:checked ~ .first{
+  margin-left: -20%;
+}
+#radio7:checked ~ .first{
+  margin-left: -40%;
+}
+#radio8:checked ~ .first{
+  margin-left: -60%;
+}
+
+
+.container{
+position:relative;
+text-align:center;
+color:white;
+font-size:80px;
+}
+.bottom-left{
+position:absolute;
+bottom:90px;
+left:50px;
+}
+ol li{
+font-family:"times new roman";
+font-size:25px;
+margin-left:80px;
+
+}
+.image{
+background:url("https://images.unsplash.com/photo-1589311836849-4cec35b363cb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fG5vcnRoZXJuJTIwbGlnaHRzfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+background-size:100%;
+height:100%;
+position:fixed;
+left:0;
+right:0;
+z-index:-1;
+filter:blur(7px);
+-webkit-filter:blur(7px);
+}
+.navbar {
+  overflow: hidden;
+  background: black; 
+}
+.navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 1px;
+  text-decoration: none;
+margin-right:100px;
+font-size:22px;
+font-family:arial;
+background-size:cover;
+}
+.navbar2{
+float:left;
+padding:0px 0px;
+color:white;
+margin-left:10px;
+display: block;
+font-size:30px;
+font-family:arial;
+}      
+</style>
+
+
+</head><body>
+
+<div class="navbar">
+<ul>
+  <a href="/project/index.html" target="_blank">Home</a></li>
+
+  <a href="/project/contact.html" target="_blank">Contact</a></li>
+  
+  <a href="/project/tips/index.html" target="_blank">Tips</a></li>
+  
+  <a href="/project/blog.html" target="_blank">Blog</a></li>
+  
+  <a href="/project/gallery.html" target="_blank">Gallery</a></li>
+  
+  <a href="/project/landing page/backvideo.html" target="_blank">Explore</a></li>
+
+<div class="navbar2">
+<span class="brand-name">
+TRAVEL-⚚-VERSE
+</span>
+</div> 
+
+</ul></div>
+
+<div class="image"></div>
+
+<div class="container">
+<div>
+<img src="./norway8_files/aurora-borealis-northern-lights-4k-kr-1600x900.jpg" alt="" width="100%" height="600px" "="">
+</div>
+<div class="bottom-left"><b>NORTHERN LIGHTS</b></div>
+</div>
+<p class="intro">To experience the unbelievable colours that move across the Arctic sky is on many travellers bucket list, and few places on earth offer more ways to witness the northern lights than Norway.</p>
+
+
+<p class="one">Between late September and late March, Northern Norway is dark from early afternoon until late morning, and the northern lights frequently soar across the sky. Our bold claim is that this part of Norway, with its multiple islands, deep fjords and steep mountains, is among the most beautiful and interesting places to see the northern lights.</p>
+    <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="./norway8_files/photo-1488415032361-b7e238421f1b" alt="">
+        </div>
+        <div class="slide">
+          <img src="./norway8_files/photo-1529963183134-61a90db47eaf" alt="">
+        </div>
+        <div class="slide">
+          <img src="./norway8_files/photo-1610620746460-de78cf3d1705" alt="">
+        </div>
+        <div class="slide">
+          <img src="./norway8_files/photo-1430132594682-16e1185b17c5" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+    
+
+<p class="one">Between late September and late March, Northern Norway is dark from early afternoon until late morning, and the northern lights frequently soar across the sky. Our bold claim is that this part of Norway, with its multiple islands, deep fjords and steep mountains, is among the most beautiful and interesting places to see the northern lights.<br>
+Between late September and late March, Northern Norway is dark from early afternoon until late morning, and the northern lights frequently soar across the sky. Our bold claim is that this part of Norway, with its multiple islands, deep fjords and steep mountains, is among the most beautiful and interesting places to see the northern lights.</p>
+<!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio5">
+        <input type="radio" name="radio-btn" id="radio6">
+        <input type="radio" name="radio-btn" id="radio7">
+        <input type="radio" name="radio-btn" id="radio8">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="./norway8_files/photo-1614090691187-983c32a930c9" alt="">
+        </div>
+        <div class="slide">
+          <img src="./norway8_files/photo-1516466723877-e4ec1d736c8a" alt="">
+        </div>
+        <div class="slide">
+          <img src="./norway8_files/photo-1593291600870-0f5fd4d32794" alt="">
+        </div>
+        <div class="slide">
+          <img src="./norway8_files/photo-1593291619462-e4240344ea21" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio5" class="manual-btn"></label>
+        <label for="radio6" class="manual-btn"></label>
+        <label for="radio7" class="manual-btn"></label>
+        <label for="radio8" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+<h2>Places to see northern lights</h2>
+<ol>
+<li>Narvik</li>
+<li>Senja</li>
+<li>Helgeland</li>
+<li>Lygenfjord Region</li>
+<li>Lofoten Islands</li>
+<li>Bodo</li>
+<li>Vesteralen</li>
+<li>Tromso</li>
+
+
+
+</ol>
+
+
+</body></html>

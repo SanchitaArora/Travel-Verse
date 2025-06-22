@@ -1,0 +1,421 @@
+﻿
+
+
+<!DOCTYPE html>
+<html>
+<style>
+.intro{
+letter-spacing:2px;
+line-height:25px;
+font-family:"Lucida Bright";
+color:white;
+opacity:5;
+background-color:rgba(0, 0, 0, 0.3);
+}
+h2{
+font-family:"Mongolian Baiti";
+font-size:40px;
+font-weight:bold;
+color:white;
+margin-left:80px;
+}
+.one{
+font-family:"times new roman";
+font-size:25px;
+text-align:justify;
+width:700px;
+padding:5px;
+margin-left:80px;
+background-color:rgba(0, 192, 217, 0.3);
+}
+.slider{
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+margin-left:80px;
+}
+
+
+.slides{
+  width: 500%;
+  height: 300px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 600px;
+  height: 300px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 600px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+#radio5:checked ~ .first{
+  margin-left: 0;
+}
+#radio6:checked ~ .first{
+  margin-left: -20%;
+}
+#radio7:checked ~ .first{
+  margin-left: -40%;
+}
+#radio8:checked ~ .first{
+  margin-left: -60%;
+}
+#radio9:checked ~ .first{
+  margin-left: 0;
+}
+#radio10:checked ~ .first{
+  margin-left: -20%;
+}
+#radio11:checked ~ .first{
+  margin-left: -40%;
+}
+#radio12:checked ~ .first{
+  margin-left: -60%;
+}
+#radio13:checked ~ .first{
+  margin-left: 0;
+}
+#radio14:checked ~ .first{
+  margin-left: -20%;
+}
+#radio15:checked ~ .first{
+  margin-left: -40%;
+}
+#radio16:checked ~ .first{
+  margin-left: -60%;
+}
+
+.container{
+position:relative;
+text-align:center;
+color:white;
+font-size:80px;
+}
+.bottom-left{
+position:absolute;
+bottom:90px;
+left:50px;
+}
+.image{
+background:url("https://images.unsplash.com/photo-1440166830278-3eb28bc7f9bc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHNreXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+background-size:100%;
+height:100%;
+position:fixed;
+left:0;
+right:0;
+z-index:-1;
+filter:blur(7px);
+-webkit-filter:blur(7px);
+}
+.navbar {
+  overflow: hidden;
+  background: black; 
+
+}
+.navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 1px;
+  text-decoration: none;
+margin-right:100px;
+font-size:22px;
+font-family:arial;
+background-size:cover;
+}
+.navbar2{
+float:left;
+padding:0px 0px;
+color:white;
+margin-left:10px;
+display: block;
+font-size:30px;
+font-family:arial;
+}      
+   
+</style>
+
+
+<body>
+
+<div class="navbar">
+<ul>
+  <a href="/project/index.html" target="_blank">Home</a></li>
+
+  <a href="/project/contact.html" target="_blank">Contact</a></li>
+  
+  <a href="/project/tips/index.html" target="_blank">Tips</a></li>
+  
+  <a href="/project/blog.html" target="_blank">Blog</a></li>
+  
+  <a href="/project/gallery.html" target="_blank">Gallery</a></li>
+  
+  <a href="/project/landing page/backvideo.html" target="_blank">Explore</a></li>
+
+<div class="navbar2">
+<span class="brand-name">
+TRAVEL-⚚-VERSE
+</span>
+</div> 
+
+</ul></div>
+
+<div class="image"></div>
+
+<div class="container">
+<div>
+<img src="https://images.hdqwalls.com/download/utakleiv-beach-in-norway-ig-1600x900.jpg" alt="" width="100%" height="600px"">
+</div>
+<div class="bottom-left"><b>DESTINATIONS TO DISCOVER</b></div>
+</div>
+<p class="intro">Along selected roads in Norway, natural wonders are amplified by art,
+ design, and architecture meant to bring you closer to nature in new and surprising ways.
+From the far north to the deep southwest, Norwegian architecture and design have stepped
+ into the landscape to intervene in the scenery along 18 especially beautiful roads.</p>
+
+<h2>Langfoss Falls</h2>
+
+
+    <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="https://assets.simpleviewcms.com/simpleview/image/fetch/c_limit,f_jpg,h_323,q_64,w_574/https://media.newmindmedia.com/TellUs/image/%3Ffile%3D031F3DD760F93FDCDF2D111101EFBF3C6C9E3C23.jpg%26dh%3D533%26dw%3D800%26t%3D4" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://assets.simpleviewcms.com/simpleview/image/fetch/c_limit,f_jpg,h_350,q_64,w_516/https://media.newmindmedia.com/TellUs/image/%3Ffile%3D6B875386C26A74B730D6C713C3607E2F72C47914.jpg%26dh%3D600%26dw%3D800%26t%3D4" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://assets.simpleviewcms.com/simpleview/image/fetch/c_limit,f_jpg,h_350,q_64,w_516/https://media.newmindmedia.com/TellUs/image/%3Ffile%3D1A40496BE9E3E7F62C47A3AF4265695FDDC1F317.jpg%26dh%3D466%26dw%3D800%26t%3D4" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://assets.simpleviewcms.com/simpleview/image/fetch/c_limit,f_jpg,h_323,q_64,w_574/https://media.newmindmedia.com/TellUs/image/%3Ffile%3DIMG_1990_931331266.jpg%26dh%3D600%26dw%3D800%26t%3D4" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+    
+
+<p class="one">Langfoss (literally pronounced and translated like “Long Falls”) was 
+a powerful cascading waterfall that tumbled down almost the entire length of a 
+mountainside before spilling into the Åkra Fjord (Åkrafjorden; “OH-kra-feeord-un”).
+According to the literature, it was said to be 612m tall making it one of the tallest 
+waterfalls in Norway as well as in the world.European route E134 runs along the base of
+ the waterfall, making access very easy. The World Waterfall Database declared this 
+waterfall to be one of the "best in the world"</p>
+
+<h2>Atlanterhavsvegen</h2>
+<!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio5">
+        <input type="radio" name="radio-btn" id="radio6">
+        <input type="radio" name="radio-btn" id="radio7">
+        <input type="radio" name="radio-btn" id="radio8">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="https://mldvwwasb8tu.i.optimole.com/5CC9Lzs.tb2a~61eeb/w:1000/h:668/q:90/https://travelaway.me/wp-content/uploads/2012/11/Atlantic-Road-Norway.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://cecr.in/CECR-Img/2019/2/Marvels/2.JPG" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://cecr.in/CECR-Img/2019/2/Marvels/5.JPG" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://www.avis.co.in/blog/wp-content/uploads/2017/05/atlantic-road-600x401.jpg" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio5" class="manual-btn"></label>
+        <label for="radio6" class="manual-btn"></label>
+        <label for="radio7" class="manual-btn"></label>
+        <label for="radio8" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+
+<p class="one">The Atlantic Road is known as ”The Road in the Ocean”, with seven bridges
+ that allows the road to follow the islands in the sea like a snake.
+The Atlantic Road takes you on a unique journey close to the powerful Atlantic Ocean. 
+This Norwegian Scenic Route opened in 1989, and is considered the most beautiful road 
+trip in the world by some, thanks to the combination of modern engineering and
+ spectacular natural surroundings. The road was chosen as the Norwegian Construction of 
+the Century in 2005, and takes you on a journey through moorland, fertile cultural 
+landscape, weather beaten bays and islands.</p>
+
+<h2>The Midnight Sun</h2>
+<!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio9">
+        <input type="radio" name="radio-btn" id="radio10">
+        <input type="radio" name="radio-btn" id="radio11">
+        <input type="radio" name="radio-btn" id="radio12">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="https://images.unsplash.com/photo-1525642650051-4e79b2eecd7c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWlkbmlnaHQlMjBzdW58ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1594220937195-fb2ed1c8d7e5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWlkbmlnaHQlMjBzdW58ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1587896674769-2e9495c302cb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bWlkbmlnaHQlMjBzdW58ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1575186405632-5cb21c4d9d19?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG1pZG5pZ2h0JTIwc3VufGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio9" class="manual-btn"></label>
+        <label for="radio10" class="manual-btn"></label>
+        <label for="radio11" class="manual-btn"></label>
+        <label for="radio12" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+<p class="one">Norway is a country of raw beauty and dramatic landscapes so it’s perhaps
+ not a surprise to learn that one of the most remarkable natural phenomena occurs there.
+ Dubbed as the land of the midnight sun, Norway is one of the very few locations where
+ sunset merges into sunrise, with no darkness in between.
+The midnight sun only occurs at certain times of the year and is only visible very close
+ to the Arctic. Norway is ideally placed to experience this eerie yet captivating sight.</p>
+
+<h2>Saltstraumen Maelstrom</h2>
+<!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio13">
+        <input type="radio" name="radio-btn" id="radio14">
+        <input type="radio" name="radio-btn" id="radio15">
+        <input type="radio" name="radio-btn" id="radio16">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="https://www.meganstarr.com/wp-content/uploads/2019/06/saltstraumen-what-to-do-in-bodo.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://www.meganstarr.com/wp-content/uploads/2019/09/Saltstraumen-Norway-4.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://www.meganstarr.com/wp-content/uploads/2019/09/Saltstraumen-Norway-6.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://www.meganstarr.com/wp-content/uploads/2019/06/saltstraumen-maelstrom-near-bodo-norway.jpg" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio13" class="manual-btn"></label>
+        <label for="radio14" class="manual-btn"></label>
+        <label for="radio15" class="manual-btn"></label>
+        <label for="radio16" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+<p class="one"> MAELSTROM (OR MALSTRÖM/MALSTRØM IN the Scandinavian languages) is a very
+ powerful whirlpool.There are a few ways to experience Saltstraumen Maelstrom—looking at
+ the whirlpools from the Saltstraumen Bridge, take a boat tour along the strait when
+ waters are calm, and snorkel in the Saltstraumen strait with all the necessary equipment.</p>
+
+
+
+
+</body>
+</html>

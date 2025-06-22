@@ -1,0 +1,334 @@
+﻿
+
+
+
+<!DOCTYPE html>
+<html>
+<style>
+.intro{
+letter-spacing:2px;
+line-height:25px;
+font-family:"Lucida Bright";
+text-align:center;
+color:white;
+opacity:5;
+background-color:rgba(0, 0, 0, 0.3);
+}
+h2{
+font-family:"Mongolian Baiti";
+font-size:40px;
+font-weight:bold;
+color:white;
+margin-left:100px;
+}
+.one{
+font-family:"times new roman";
+font-size:22px;
+text-align:justify;
+width:1100px;
+padding:5px;
+margin-left:100px;
+background-color:rgba(0, 192, 217, 0.3);
+}
+.slider{
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+margin-left:355px;
+}
+
+
+.slides{
+  width: 500%;
+  height: 300px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 600px;
+  height: 300px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 600px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+#radio5:checked ~ .first{
+  margin-left: 0;
+}
+#radio6:checked ~ .first{
+  margin-left: -20%;
+}
+#radio7:checked ~ .first{
+  margin-left: -40%;
+}
+#radio8:checked ~ .first{
+  margin-left: -60%;
+}
+#radio9:checked ~ .first{
+  margin-left: 0;
+}
+#radio10:checked ~ .first{
+  margin-left: -20%;
+}
+#radio11:checked ~ .first{
+  margin-left: -40%;
+}
+#radio12:checked ~ .first{
+  margin-left: -60%;
+}
+#radio13:checked ~ .first{
+  margin-left: 0;
+}
+#radio14:checked ~ .first{
+  margin-left: -20%;
+}
+#radio15:checked ~ .first{
+  margin-left: -40%;
+}
+#radio16:checked ~ .first{
+  margin-left: -60%;
+}
+
+.container{
+position:relative;
+text-align:center;
+color:white;
+font-size:80px;
+}
+.bottom-left{
+position:absolute;
+bottom:90px;
+left:50px;
+}
+ol li{
+font-family:"times new roman";
+font-size:25px;
+margin-left:80px;
+}
+.image{
+background:url("https://cdn.mos.cms.futurecdn.net/5KSk4ZBr8d6e5tTfpb3iWj-1280-80.jpg.webp");
+background-size:100%;
+height:100%;
+position:fixed;
+left:0;
+right:0;
+z-index:-1;
+filter:blur(9px);
+-webkit-filter:blur(9px);
+}
+.navbar {
+  overflow: hidden;
+  background: black; 
+}
+.navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 1px;
+  text-decoration: none;
+margin-right:100px;
+font-size:22px;
+font-family:arial;
+background-size:cover;
+}
+.navbar2{
+float:left;
+padding:0px 0px;
+color:white;
+margin-left:10px;
+display: block;
+font-size:30px;
+font-family:arial;
+}      
+      
+</style>
+
+
+<body>
+
+<div class="navbar">
+<ul>
+  <a href="/project/index.html" target="_blank">Home</a></li>
+
+  <a href="/project/contact.html" target="_blank">Contact</a></li>
+  
+  <a href="/project/tips/index.html" target="_blank">Tips</a></li>
+  
+  <a href="/project/blog.html" target="_blank">Blog</a></li>
+  
+  <a href="/project/gallery.html" target="_blank">Gallery</a></li>
+  
+  <a href="/project/landing page/backvideo.html" target="_blank">Explore</a></li>
+
+<div class="navbar2">
+<span class="brand-name">
+TRAVEL-⚚-VERSE
+</span>
+</div> 
+
+</ul></div>
+
+<div class="image"></div>
+
+<div class="container">
+<div>
+<img src="/project/images/gallery4.jpg" alt="" width="100%" height="600px">
+</div>
+<div class="bottom-left"><b>CAMPING</b></div>
+</div>
+<p class="intro">Freedom to go anywhere, anytime or just stay in one place for a while. 
+Laughter, smiles and good timesand lots of opportunities to meet cool, new friends! You're bound to get some, if you choose one of Norway's family-friendly campsites, full of fun activities</p>
+
+<p class="one">Camping in some of the world’s most dramatic terrain is one of the best things about a trip to Norway. And the bonus: it keeps costs down in what is otherwise an expensive country to travel around.</p>
+
+    <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="https://www.routesnorth.com/wp-content/uploads/2019/04/RV-camping-in-Lofoten.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://www.routesnorth.com/wp-content/uploads/2019/04/Campsites-by-the-river.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://www.routesnorth.com/wp-content/uploads/2019/04/Hammerstad-campsite.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1559521783-1d1599583485?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNhbXBpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+    
+
+<p class="one">Wild camping is allowed almost everywhere in Norway, and with a fjord or a lake just a few steps away, you can freshen up with a dip in the morning – it gives an endorphin rush like no other to start the day.
+A longstanding law called allemannsretten (loosely translated as ‘the right to roam’) allows everyone to wild camp virtually anywhere in open country, for free. It gives fantastic freedom, with a few common-sense provisos, so that you don’t upset the landowner or annoy other people enjoying the countryside."
+You can camp for up to two nights on any stretch of uncultivated land without asking permission from the landowner.<br>
+This right applies to camping in open country only, not farmland under cultivation, hay meadows, or young plantations and regenerating forest. If in doubt, look for another spot.
+Your pitch needs to be 150m away from the nearest house, cabin or other building that’s being occupied or used. You can’t set up camp on someone’s lawn or the plot around a holiday home.
+In remote areas, you don’t need to seek permission for longer stays as long as it doesn’t cause inconvenience and you’re not close to busy walking trails or touristy spots.
+In return for pitching up in the wild, you’re asked to respect nature and wildlife and leave no litter or other trace of your stay.</p>
+
+<!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio5">
+        <input type="radio" name="radio-btn" id="radio6">
+        <input type="radio" name="radio-btn" id="radio7">
+        <input type="radio" name="radio-btn" id="radio8">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FtcGluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1532339142463-fd0a8979791a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FtcGluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://www.routesnorth.com/wp-content/uploads/2020/07/boflaten-camping.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://www.routesnorth.com/wp-content/uploads/2019/04/campfires-are-allowed-on-the-beach.jpg" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio5" class="manual-btn"></label>
+        <label for="radio6" class="manual-btn"></label>
+        <label for="radio7" class="manual-btn"></label>
+        <label for="radio8" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+
+
+
+<h2>Best Camping Grounds</h2>
+<ol type="1">
+<li>Lofoten</li>
+<li>Southern Norway</li>
+<li>Northern Norway</li>
+<li>Bergen</li>
+<li>Alta</li>
+<li>Oppdal</li>
+<li>Senja</li>
+</ol>
+
+</body>
+</html>

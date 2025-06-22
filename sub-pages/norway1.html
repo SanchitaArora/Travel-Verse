@@ -1,1 +1,558 @@
+﻿
 
+<!DOCTYPE html>
+<html>
+<style>
+.intro{
+letter-spacing:2px;
+line-height:25px;
+font-family:"Lucida Bright";
+opacity:5;
+color:white;
+background-color:rgba(0, 0, 0, 0.3);
+}
+h2{
+font-family:"Mongolian Baiti";
+font-size:40px;
+font-weight:bold;
+color:white;
+margin-left:100px;
+}
+.one{
+font-family:"times new roman";
+font-size:25px;
+text-align:justify;
+width:700px;
+padding:5px;
+margin-left:100px;
+background-color:rgba(2, 45, 246, 0.4);
+}
+.slider1{
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+margin-left:100px;
+}
+
+
+.slides{
+  width: 500%;
+  height: 300px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 600px;
+  height: 300px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 600px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+#radio5:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio6:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio7:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio8:checked ~ .first{
+  margin-left: -60%;
+}
+#radio9:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio10:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio11:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio12:checked ~ .first{
+  margin-left: -60%;
+}
+#radio13:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio14:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio15:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio16:checked ~ .first{
+  margin-left: -60%;
+}
+#radio17:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio18:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio19:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio20:checked ~ .first{
+  margin-left: -60%;
+}
+#radio21:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio22:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio23:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio24:checked ~ .first{
+  margin-left: -60%;
+}
+
+
+.container{
+position:relative;
+text-align:center;
+color:white;
+font-size:80px;
+}
+.bottom-left{
+position:absolute;
+bottom:90px;
+left:50px;
+}
+.image{
+background:url("https://www.wallpaperimageshd.com/uploads/2021/03/22/winter-snow-475x340.jpg");
+background-size:cover;
+height:100%;
+position:fixed;
+left:0;
+right:0;
+z-index:-1;
+filter:blur(9px);
+-webkit-filter:blur(9px);
+}
+.navbar {
+  overflow: hidden;
+  background: black; 
+}
+.navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 1px;
+  text-decoration: none;
+margin-right:100px;
+font-size:22px;
+font-family:arial;
+background-size:cover;
+}
+.navbar2{
+float:left;
+padding:0px 0px;
+color:white;
+margin-left:10px;
+display: block;
+font-size:30px;
+font-family:arial;
+}      
+</style>
+
+
+<body>
+<div class="navbar">
+<ul>
+  
+<a href="/project/index.html" target="_blank">Home</a></li>
+
+<a href="/project/contact.html" target="_blank">Contact</a></li>
+
+<a href="/project/tips/index.html" target="_blank">Tips</a></li>
+
+<a href="/project/blog.html" target="_blank">Blog</a></li>
+
+<a href="/project/gallery.html" target="_blank">Gallery</a></li>
+
+<a href="/project/landing page/backvideo.html" target="_blank">Explore</a></li>
+
+<div class="navbar2">
+<span class="brand-name">
+TRAVEL-⚚-VERSE
+</span>
+</div> 
+
+</ul></div>
+<div class="image"></div>
+<div class="container">
+<div>
+  <img src="/project/images/gallery2.jpg" alt="" width="100%" height="600px" >
+</div>
+<div class="bottom-left"><b>TOP PLACES TO VISIT</b></div>
+</div>
+<p class="intro">From hip urban cities to glittering fjords, northern lights, and remote villages
+ above the Arctic Circle – Norway is a veeery long country, packed with things 
+to see and do. So, where do you start? 
+To get the most out of your holiday, we recommend that you choose one or two regions
+ to explore. Here are some of the highlights!</p>
+
+<h2>See the beautiful Hamnøy</h2>
+
+
+    <!--image slider start-->
+    <div class="slider1">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="https://images.unsplash.com/photo-1554140781-33058d9962b9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGFtbm95fGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1599777235597-78d46d44b2cb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFtbm95fGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1568021202640-319da2ca1806?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aGFtbm95fGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1604608681018-e5c9db554fd5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aGFtbm95fGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+    
+
+<p class="one">The oldest fishing village in the stunning Lofoten archipelago is small
+, but unbelievably beautiful. It is considered to be one of the most 
+picturesque villages in the municipality of Moskenes, which is also a 
+popular tourist destination due to its scenic and unspoiled nature.
+Make sure to visit the tiny little fishing village of Hamnøy which is the oldest
+ in Lofoten. Perched on the edge of the Reinefjord (fjord), it really is a place
+ you shouldn’t miss.</p>
+
+<h2>Explore Bergen</h2>
+<!--image slider start-->
+    <div class="slider1">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio5">
+        <input type="radio" name="radio-btn" id="radio6">
+        <input type="radio" name="radio-btn" id="radio7">
+        <input type="radio" name="radio-btn" id="radio8">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="https://images.unsplash.com/photo-1501342682596-e83fef8a5223?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGJlcmdlbnxlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1581000062376-936bff7c54d5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGJlcmdlbnxlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,h_300,q_64,w_400/v1/clients/norway/944903da_f374_49f6_926d_669e5a9e1dcc_8fdb0036-38af-4e00-8e8b-080801b0fe39.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://cdn.britannica.com/s:690x388,c:crop/97/94497-050-76D1F948/Lights-harbor-twinkle-Bergen-twilight-port-cities.jpg" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio5" class="manual-btn"></label>
+        <label for="radio6" class="manual-btn"></label>
+        <label for="radio7" class="manual-btn"></label>
+        <label for="radio8" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+
+<p class="one">Bergen is the Gateway to the Fjords of Norway. As a UNESCO
+ World Heritage City and a European City of Culture, the Bergen region has the
+ ideal combination of nature, culture and exciting urban life all year around.
+In Bergen you can find a range of different accommodationranging from exclusive 
+hotels to charming Bed & Breakfasts. In Bergen you can also enjoy some of the 
+finest seafood restaurantsin Norway. </p>
+
+<h2>Visit the tiny village of Reine</h2>
+<!--image slider start-->
+    <div class="slider1">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio9">
+        <input type="radio" name="radio-btn" id="radio10">
+        <input type="radio" name="radio-btn" id="radio11">
+        <input type="radio" name="radio-btn" id="radio12">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="http://vignette2.wikia.nocookie.net/tigerpuss/images/c/cc/Reine-Norway-1-.jpg/revision/latest?cb=20170128231609" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/164727396.jpg?k=0c608b82fcc440e43ff42b55b0936d6f23dbb04430302b8a73fda306e3b9eae0&o=&hp=1" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/162090590.jpg?k=a414dfef301f66b1e111dc0630f5696c01efb5685af1aec2d43b72c457085ecd&o=&hp=1" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/26840407.jpg?k=abb2696e50a1cfda64bd5302613a951243f7f0da9788e8fe57a6cf6552c8d750&o=&hp=1" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio9" class="manual-btn"></label>
+        <label for="radio10" class="manual-btn"></label>
+        <label for="radio11" class="manual-btn"></label>
+        <label for="radio12" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+
+<p class="one">Easily, one of the best places in Norway – Reine is picture perfect.
+ Nestled on the island of Moskenesøya it is actually part of the Lofoten set of 
+islands and archipelago that’s made this region so gorgeous.
+For a stunning experience, wrap up warm (with plenty of layers) and head 
+to Bunes Beach, especially at night. Find a nice spot, lay back on the sandy 
+beach and watch the dancing Northern Lights above you. It really is a special
+experience.</p>
+
+<h2>Hike Pulpit Rock</h2>
+<!--image slider start-->
+    <div class="slider1">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio13">
+        <input type="radio" name="radio-btn" id="radio14">
+        <input type="radio" name="radio-btn" id="radio15">
+        <input type="radio" name="radio-btn" id="radio16">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="https://images.unsplash.com/photo-1443890484047-5eaa67d1d630?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8cHVscGl0JTIwcm9ja3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://s27363.pcdn.co/wp-content/uploads/2019/09/Tim-Tyler-Kara.jpg.webp" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://s27363.pcdn.co/wp-content/uploads/2019/09/Norway-Hike.jpg.webp" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://s27363.pcdn.co/wp-content/uploads/2016/12/Pulpit-Rock-with-Kids.jpg.webp" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio13" class="manual-btn"></label>
+        <label for="radio14" class="manual-btn"></label>
+        <label for="radio15" class="manual-btn"></label>
+        <label for="radio16" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+
+<p class="one">You’re almost guaranteed one of the best views of Norway from the top
+ of Pulpit Rock. I mean, it ’s one of the best places in Norway – especially with the
+ vistas you’ll see across the fjord. Now, the hike itself (return) took around 4-5 
+hours but it really depends on how fast and fit you are.
+The hike itself is pretty amazing too, just be prepared for changing weather 
+conditions and be extra careful once you reach the top. Hikers have died falling 
+off the ledge, especially during high winds.</p>
+
+<h2>Visit the Briksdalsbreen Glacier</h2>
+<!--image slider start-->
+    <div class="slider1">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio17">
+        <input type="radio" name="radio-btn" id="radio18">
+        <input type="radio" name="radio-btn" id="radio19">
+        <input type="radio" name="radio-btn" id="radio20">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="https://images.unsplash.com/photo-1599164908265-310bf68d79d4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YnJpa3NkYWxzYnJlZW4lMjBnbGFjaWVyfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://assets.simpleviewcms.com/simpleview/image/fetch/c_limit,f_jpg,h_323,q_64,w_574/https://images.citybreak.com/image.aspx%3FImageId%3D6896953" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://assets.simpleviewcms.com/simpleview/image/fetch/c_limit,f_jpg,h_350,q_64,w_516/https://images.citybreak.com/image.aspx%3FImageId%3D6896954" alt="">
+        </div>
+        <div class="slide">
+          <img src="http://www.favorittreiser.no/wp-content/uploads/2019/01/Briksdalsbreen-bilferie-Norge-1024x782.jpg" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio17" class="manual-btn"></label>
+        <label for="radio18" class="manual-btn"></label>
+        <label for="radio19" class="manual-btn"></label>
+        <label for="radio20" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+
+<p class="one">Briksdalsbreen is a glacier arm of Jostedalsbreen, and is set 
+in Briksdal Valley, at the end of Oldedalen Valley, in Stryn in Sogn og Fjordane County
+This famous glacier arm lies in beautiful surroundings between high peaks and roaring
+ waterfalls, dropping 1200 meters into the narrow Briksdal valley below. It is a 
+spectacular sight attracting visitors from all over the world.</p>
+
+<h2>Kristiansand and Southern Norway</h2>
+<!--image slider start-->
+    <div class="slider1">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio21">
+        <input type="radio" name="radio-btn" id="radio22">
+        <input type="radio" name="radio-btn" id="radio23">
+        <input type="radio" name="radio-btn" id="radio24">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="https://static.trip101.com/main_pics/20218/medium.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://cdn.kimkim.com/files/a/article_images/images/ca6fc7ae7e41dde33592bc6290655ca94728c430/big-3305a4a0e8e4bb9a573bb73017f6cf6a.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://cdn.kimkim.com/files/a/article_images/images/2924a4fc1eb5b3bca5352d8886939661a11915d7/big-240ae156743b62f6059bf41b3f918424.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://cdn.britannica.com/s:690x388,c:crop/06/144106-050-C6FA4B12/Kristiansand.jpg" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio21" class="manual-btn"></label>
+        <label for="radio22" class="manual-btn"></label>
+        <label for="radio23" class="manual-btn"></label>
+        <label for="radio24" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+
+<p class="one">Kristiansand, town and seaport, southern Norway. Located on the Skagerrak
+ (strait between Norway and Denmark) at the mouth of the Otra River, it has a spacious, 
+ice-free harbour, protected by offshore islands, and is the largest community of 
+Sørlandet region. 
+It is now a busy transportation centre and probably the most important town on the 
+Oslo-Stavanger rail line. It provides ocean freight service to numerous European and 
+American ports and a car ferry across the Skagerrak to Hirtshals, Den. Kjevik Airport, 
+northeast of the town, has direct flights to the principal cities of Norway and to
+ Copenhagen. An important industrial centre, Kristiansand has shipyards, textile mills,
+ and metal- and wood-processing plants. Food processing (flour and fish) is also 
+significant.</p>
+ 
+
+
+</body>
+</html>

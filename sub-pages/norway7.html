@@ -1,0 +1,297 @@
+﻿
+
+
+
+<!DOCTYPE html>
+<html>
+<style>
+.intro{
+letter-spacing:2px;
+line-height:25px;
+font-family:"Lucida Bright";
+opacity:5;
+text-align:center;
+color:white;
+background-color:rgba(0,0,0,0.3);
+}
+h2{
+font-family:"Mongolian Baiti";
+font-size:40px;
+font-weight:bold;
+color:white;
+margin-left:100px;
+}
+.one{
+font-family:"times new roman";
+font-size:22px;
+text-align:justify;
+width:1100px;
+padding:5px;
+margin-left:100px;
+background-color:rgba(135, 99, 0, 0.4);
+}
+.slider{
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+margin-left:355px;
+}
+
+
+.slides{
+  width: 500%;
+  height: 300px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 600px;
+  height: 300px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 600px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+#radio5:checked ~ .first{
+  margin-left: 0;
+}
+#radio6:checked ~ .first{
+  margin-left: -20%;
+}
+#radio7:checked ~ .first{
+  margin-left: -40%;
+}
+#radio8:checked ~ .first{
+  margin-left: -60%;
+}
+
+
+.container{
+position:relative;
+text-align:center;
+color:white;
+font-size:80px;
+}
+.bottom-left{
+position:absolute;
+bottom:90px;
+left:50px;
+}
+ol li{
+font-family:"times new roman";
+font-size:25px;
+margin-left:80px;
+}
+.image{
+background:url("http://www.baltana.com/files/wallpapers-3/Mountain-Biking-Background-Wallpaper-09284.jpg");
+background-size:100%;
+height:100%;
+position:fixed;
+left:0;
+right:0;
+z-index:-1;
+filter:blur(9px);
+-webkit-filter:blur(9px);
+}
+.navbar {
+  overflow: hidden;
+  background: black; 
+}
+.navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 1px;
+  text-decoration: none;
+margin-right:100px;
+font-size:22px;
+font-family:arial;
+background-size:cover;
+}
+.navbar2{
+float:left;
+padding:0px 0px;
+color:white;
+margin-left:10px;
+display: block;
+font-size:30px;
+font-family:arial;
+}      
+</style>
+
+
+<body>
+
+<div class="navbar">
+<ul>
+  <a href="/project/index.html" target="_blank">Home</a></li>
+
+  <a href="/project/contact.html" target="_blank">Contact</a></li>
+  
+  <a href="/project/tips/index.html" target="_blank">Tips</a></li>
+  
+  <a href="/project/blog.html" target="_blank">Blog</a></li>
+  
+  <a href="/project/gallery.html" target="_blank">Gallery</a></li>
+  
+  <a href="/project/landing page/backvideo.html" target="_blank">Explore</a></li>
+
+<div class="navbar2">
+<span class="brand-name">
+TRAVEL-⚚-VERSE
+</span>
+</div> 
+
+</ul></div>
+
+<div class="image"></div>
+
+<div class="container">
+<div>
+<img src="https://www.outsideonline.com/wp-content/uploads/2020/11/19/cyclist-lens-flare_h.jpg?crop=16:9&width=960&enable=upscale&quality=100.jpg" alt="" width="100%" height="600px"">
+</div>
+<div class="bottom-left"><b>BIKE RIDING</b></div>
+</div>
+<p class="intro">Cycling in Norway equals gentle rides through quaint villages and magnificent nature – but also tough mountain biking trails and big events like the Arctic Race.</p>
+
+
+<p class="one">High mountains, steep downhills, and rough terrain – at first sight, Norway may seem like a cycling destination reserved for hard-core road cycling or mountain and downhill biking. And sure, if you want a challenge on two wheels, we can help you with that.</p>
+
+    <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="https://images.unsplash.com/photo-1508789454646-bef72439f197?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmlraW5nfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1557761375-91dcdf32014e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YmlraW5nfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1604413757252-957354f5955d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJpa2luZ3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1511994298241-608e28f14fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGJpa2luZ3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+    
+
+<p class="one">The interest in cycling in Norway has skyrocketed in the last few years. A number of local and national initiatives are turning the country into a European top cycling destination. This is evident in the increasing number of destinations and facilities available for cycling tourists – for example in mtb/freeride parks like Hafjell, Trysil, and Geilo, cyclist-friendly accommodation options, and bike rental and repair shops<br>
+
+On the other hand, there’s a lot more to Norway than hair-raising peaks. Thanks to a remarkably varied topography, even the more inexperienced couch cyclists among us can find suitable routes. It is a wonderful way to get closer to nature, discover hidden gems in the countryside, and perhaps even experience an extra amount of goodwill from the locals.</p>
+
+<!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio5">
+        <input type="radio" name="radio-btn" id="radio6">
+        <input type="radio" name="radio-btn" id="radio7">
+        <input type="radio" name="radio-btn" id="radio8">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="https://images.unsplash.com/flagged/photo-1563192735-db5ed42d28c3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGN5Y2xpbmd8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1600403477955-2b8c2cfab221?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y3ljbGluZ3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,g_xy_center,h_300,q_64,w_400,x_1586,y_433/v1/clients/norway/magic_moose_mountain_biking_trysil_photo_hans_martin_nysaeter_trysil_2_1_9555ebf6-8dd4-4cb9-92f1-a61d2b175480.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://assets.simpleviewcms.com/simpleview/image/upload/c_fill,g_xy_center,h_300,q_64,w_400,x_640,y_526/v1/clients/norway/road-cycling-geirangerfjord-norway-2-1_70f1a01e-c7c9-4d44-a1fc-10161193fdc8.jpg" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio5" class="manual-btn"></label>
+        <label for="radio6" class="manual-btn"></label>
+        <label for="radio7" class="manual-btn"></label>
+        <label for="radio8" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+
+
+
+</ol>
+
+</body>
+</html>

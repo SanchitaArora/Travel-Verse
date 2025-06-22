@@ -1,0 +1,454 @@
+﻿
+
+
+
+
+<!DOCTYPE html>
+<html>
+<style>
+.intro{
+letter-spacing:2px;
+line-height:25px;
+font-family:"Lucida Bright";
+opacity:5;
+text-align:center;
+color:white;
+background-color:rgba(0, 0, 0, 0.4);
+}
+h2{
+font-family:"Mongolian Baiti";
+font-size:40px;
+font-weight:bold;
+color:white;
+margin-left:100px;
+}
+.one{
+font-family:"times new roman";
+font-size:22px;
+text-align:justify;
+width:1100px;
+padding:5px;
+margin-left:100px;
+background-color:rgba(2, 160, 165, 0.3);
+}
+.slider{
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+margin-left:355px;
+}
+
+
+.slides{
+  width: 500%;
+  height: 300px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 600px;
+  height: 300px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 600px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+#radio5:checked ~ .first{
+  margin-left: 0;
+}
+#radio6:checked ~ .first{
+  margin-left: -20%;
+}
+#radio7:checked ~ .first{
+  margin-left: -40%;
+}
+#radio8:checked ~ .first{
+  margin-left: -60%;
+}
+#radio9:checked ~ .first{
+  margin-left: 0;
+}
+#radio10:checked ~ .first{
+  margin-left: -20%;
+}
+#radio11:checked ~ .first{
+  margin-left: -40%;
+}
+#radio12:checked ~ .first{
+  margin-left: -60%;
+}
+#radio13:checked ~ .first{
+  margin-left: 0;
+}
+#radio14:checked ~ .first{
+  margin-left: -20%;
+}
+#radio15:checked ~ .first{
+  margin-left: -40%;
+}
+#radio16:checked ~ .first{
+  margin-left: -60%;
+}
+#radio17:checked ~ .first{
+  margin-left: 0;
+}
+#radio18:checked ~ .first{
+  margin-left: -20%;
+}
+#radio19:checked ~ .first{
+  margin-left: -40%;
+}
+#radio20:checked ~ .first{
+  margin-left: -60%;
+}
+
+.container{
+position:relative;
+text-align:center;
+color:white;
+font-size:80px;
+}
+.bottom-left{
+position:absolute;
+bottom:60px;
+left:50px;
+}
+ol li{
+font-family:"times new roman";
+font-size:25px;
+margin-left:80px;
+}
+.image{
+background:url("https://images.unsplash.com/photo-1580237754524-f26ed36fa85c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzN8fHNub3d8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+background-size:cover;
+height:100%;
+position:fixed;
+left:0;
+right:0;
+z-index:-1;
+filter:blur(9px);
+-webkit-filter:blur(9px);
+}
+.navbar {
+  overflow: hidden;
+  background: black; 
+}
+.navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 1px;
+  text-decoration: none;
+margin-right:100px;
+font-size:22px;
+font-family:arial;
+background-size:cover;
+}
+.navbar2{
+float:left;
+padding:0px 0px;
+color:white;
+margin-left:10px;
+display: block;
+font-size:30px;
+font-family:arial;
+}      
+</style>
+
+
+<body>
+
+<div class="navbar">
+<ul>
+  <a href="/project/index.html" target="_blank">Home</a></li>
+
+  <a href="/project/contact.html" target="_blank">Contact</a></li>
+  
+  <a href="/project/tips/index.html" target="_blank">Tips</a></li>
+  
+  <a href="/project/blog.html" target="_blank">Blog</a></li>
+  
+  <a href="/project/gallery.html" target="_blank">Gallery</a></li>
+  
+  <a href="/project/landing page/backvideo.html" target="_blank">Explore</a></li>
+
+<div class="navbar2">
+<span class="brand-name">
+TRAVEL-⚚-VERSE
+</span>
+</div> 
+
+</ul></div>
+
+<div class="image"></div>
+
+<div class="container">
+<div>
+  <img src="/project/images/gallery6.jpg" alt="" width="100%" height="600px" >
+</div>
+<div class="bottom-left"><b>EXCITING ADVENTURES</b></div>
+</div>
+<p class="intro">Norway is the hub of adventures . so lets find out what type of adventures are waiting for you.</p>
+<h2>Summer Skiing in Stryn</h2>
+<p class="one">Skiing in the summer? Yes, there IS such a thing, and Norway is the best place to do it, what with the sport originating from the country. Forget the punishing cold and heavy layered clothing and think shorts, T-shirts and after-ski beers in the warm sun.
+
+There are other summer ski areas in Norway, but Stryn has the best slopes, with great off-piste (meaning tracks apart from the usual ski runs), better options and a terrain park to boot!</p>
+    <!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="https://images.unsplash.com/photo-1605540436563-5bca919ae766?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2tpaW5nfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1596473536124-397c469c8506?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c2tpaW5nfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1550047510-0c7c2f097665?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c2tpaW5nfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1596473536056-91eadf31189e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHNraWluZ3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+    
+
+
+<h2>Dog Sledding</h2>
+<p class="one">Dog sled racing is a popular sport in Northern Norway, with the tradition going back a long way. With just a few minutes of instruction by experienced dog-sledders, you will be able to drive one yourself! Pulled by a team of eager huskies, you’ll whizz past the snow-covered landscape, like rock formations, forests and more.
+
+Many organisers include along with the sled trip a visit to places where you can see the Northern Lights from. The best time to have a chance of seeing the famous Northern Lights is from mid-November to April. Incidentally, this is also the best time to try dog sledding.</p>
+
+<!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio5">
+        <input type="radio" name="radio-btn" id="radio6">
+        <input type="radio" name="radio-btn" id="radio7">
+        <input type="radio" name="radio-btn" id="radio8">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="https://images.unsplash.com/photo-1515467135277-8e8dcd900d44?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZG9nJTIwc2xlZGRpbmd8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1524131743472-e04996681ba0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9nJTIwc2xlZGRpbmd8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1543701131-bbbe3df320b3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZG9nJTIwc2xlZGRpbmd8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1480480841387-c9b88fac077a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNsZWRkaW5nfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio5" class="manual-btn"></label>
+        <label for="radio6" class="manual-btn"></label>
+        <label for="radio7" class="manual-btn"></label>
+        <label for="radio8" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+<h2>Hiking Trolltunga</h2>
+<p class="one">There are many cliffs to hike in Norway, but the most iconic and scenic of em all is the Trolltunga. Translating to “Troll’s Tongue”, the hanging cliff juts out of the rock formation at a whopping 2297 feet above sea level. Tourists and hikers throng the cliff to enjoy the stunning beauty of Lake Ringedalsvatnet below, and the surrounding mountain.
+
+The hike is a 22km round trip, taking around 11 hours to complete. Though it is a physically demanding hike, the view from the iconic ledge is simply breathtaking, and must be seen to be believed. The hike is best made from mid-June to mid-September.</p>
+<!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio9">
+        <input type="radio" name="radio-btn" id="radio10">
+        <input type="radio" name="radio-btn" id="radio11">
+        <input type="radio" name="radio-btn" id="radio12">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="https://images.unsplash.com/photo-1458442310124-dde6edb43d10?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aGlraW5nfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aGlraW5nfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1445307806294-bff7f67ff225?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGhpa2luZ3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1587221703223-181d78a8fc4c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGhpa2luZ3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio9" class="manual-btn"></label>
+        <label for="radio10" class="manual-btn"></label>
+        <label for="radio11" class="manual-btn"></label>
+        <label for="radio12" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+<h2>Wildlife safaris</h2>
+<p class="one">Despite the cold and the terrain of Norway, the country is home to many unique species of animals and birds. Norway’s different regions are the natural habitat for giant king crabs, whales, arctic foxes, musk oxen and more.
+
+Take one of the many guided safaris to experience the breathtaking scenery of the Norwegian landscape and to spot the country’s amazing animals.</p>
+<!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio13">
+        <input type="radio" name="radio-btn" id="radio14">
+        <input type="radio" name="radio-btn" id="radio15">
+        <input type="radio" name="radio-btn" id="radio16">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="https://images.unsplash.com/photo-1602410132231-9e6c692e02db?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2FmYXJpc3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1569865224318-2553081e951f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNhZmFyaXN8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1529869300658-00e0c576ca95?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fG5vcndheSUyMHNhZmFyaXN8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1536935672044-2bd5cf0999b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTR8fG5vcndheSUyMHNhZmFyaXN8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio13" class="manual-btn"></label>
+        <label for="radio14" class="manual-btn"></label>
+        <label for="radio15" class="manual-btn"></label>
+        <label for="radio16" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+<h2>Whitewater Rafting</h2>
+<p class="one">Norway is home to fast-flowing rivers and frothing rapids, so whitewater rafting is naturally a must-do activity here. The Sjoa River is the most famous place to try the thrilling adventure sport in Norway. However, rafting centers are available all over the country.
+
+With safety being the primary concern, always enlist the services of a professional rafting company. Pack warm and dry clothes for after the course, since you WILL get wet. There are courses of varying difficulty available, with age restrictions and a certain degree of stamina required to attempt them.</p>
+<!--image slider start-->
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio17">
+        <input type="radio" name="radio-btn" id="radio18">
+        <input type="radio" name="radio-btn" id="radio19">
+        <input type="radio" name="radio-btn" id="radio20">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img src="https://images.unsplash.com/photo-1530866495561-507c9faab2ed?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFmdGluZ3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1582811588572-80aa935b1145?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cmFmdGluZ3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1598610882061-bb806386c5fb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cmFmdGluZ3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1508166466920-f65aa51f727c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cmFmdGluZ3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+        </div>
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        
+        <!--automatic navigation end-->
+      </div>
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio17" class="manual-btn"></label>
+        <label for="radio18" class="manual-btn"></label>
+        <label for="radio19" class="manual-btn"></label>
+        <label for="radio20" class="manual-btn"></label>
+      </div>
+      <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+</body>
+</html>
